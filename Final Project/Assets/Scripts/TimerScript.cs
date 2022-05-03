@@ -16,7 +16,12 @@ public class TimerScript : MonoBehaviour
     {
         //set timer UI
         seconds += Time.deltaTime;
-        timerText.text = minutes + ":"+ (int)seconds + "s";
+        timerText.text = "Time Elapsed: " + minutes + ":";
+        if(seconds < 10)
+        {
+            timerText.text += "0";
+        }
+        timerText.text += (int)seconds;
         if (seconds >= 60)
         {
             minutes++;
