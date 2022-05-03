@@ -370,11 +370,29 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: "Copied Avatar Rig Configuration mis-match. Transform hierarchy
-      does not match:\n\tTransform 'Hips' for human bone 'Hips' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'B_Spine' has translation animation that
+      will be discarded.\n\t'B_Spine1' has translation animation that will be discarded.\n\t'B_Spine2'
+      has translation animation that will be discarded.\n\t'B_Spine2' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'B_L_ForeArmTwist'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'B_L_Finger0'
+      has scale animation that will be discarded.\n\t'B_R_UpperArm' has scale animation
+      that will be discarded.\n\t'B_R_Forearm' has scale animation that will be discarded.\n\t'B_R_ForeArmTwist'
+      has translation animation that will be discarded.\n\t'B_R_ForeArmTwist' is
+      inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'B_R_Hand'
+      has translation animation that will be discarded.\n\t'B_R_Hand' has scale animation
+      that will be discarded.\n\t'B_R_Finger01' has scale animation that will be
+      discarded.\n\t'B_R_Finger02' has scale animation that will be discarded.\n\t'B_R_Finger1'
+      has scale animation that will be discarded.\n\t'B_R_Finger11' has scale animation
+      that will be discarded.\n\t'B_R_Finger12' has scale animation that will be
+      discarded.\n\t'B_R_Finger2' has scale animation that will be discarded.\n\t'B_R_Finger21'
+      has scale animation that will be discarded.\n\t'B_R_Finger22' has scale animation
+      that will be discarded.\n\t'B_R_Finger3' has scale animation that will be discarded.\n\t'B_R_Finger4'
+      has scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
