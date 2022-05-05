@@ -18,16 +18,19 @@ public class PlayerController : MonoBehaviour
     {
         float accelerator = 1.0f;
 
-        if (!controller.isGrounded) return;
-
-        if (Input.GetKey(KeyCode.Space))
-            animator.SetBool("Attack", true);
-
-        else
-            animator.SetBool("Attack", false);
-
-        float v = Input.GetAxis("Vertical");
-        float zSpeed = v * accelerator;
-        animator.SetFloat("Speed", zSpeed);
+        if (controller.isGrounded)
+        {
+            if (Input.GetKey(KeyCode.RightShift))
+                animator.SetBool("Attack", true);
+            else
+                animator.SetBool("Attack", false);
+            if (Input.GetKey(KeyCode.Space))
+                animator.SetBool("Jump", true);
+            else
+                animator.SetBool("Jump", false);
+            float v = Input.GetAxis("Vertical");
+            float zSpeed = v * accelerator;
+            animator.SetFloat("Speed", zSpeed);
+        }
     }
 }
