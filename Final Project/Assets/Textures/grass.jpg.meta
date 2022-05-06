@@ -1,22 +1,9 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Final Project/Assets/2D Progress Bar Toolkit/Sprites/bar_01_animal/bar_01_animal.jpg.meta
-<<<<<<< HEAD
 guid: a516260dd78cd40b09558efa35697aaa
-=======
-guid: 39fcce9e5484ae74ebe7d2ae7acc3fb2
->>>>>>> 6553982e7ac99a85aeb1ec8e725e871bd261d3f3
-timeCreated: 1512662875
-licenseType: Store
-TextureImporter:
-  fileIDToRecycleName: {}
-  serializedVersion: 4
-========
-guid: 1db7e0cc1941a9540a0e7e8d5b945b7a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
->>>>>>>> 5138e2540d0a80a68151d022d5b0e2d6d29c1863:Final Project/Assets/Textures/grass.jpg.meta
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -24,6 +11,8 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -32,12 +21,9 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-<<<<<<<< HEAD:Final Project/Assets/2D Progress Bar Toolkit/Sprites/bar_01_animal/bar_01_animal.jpg.meta
-========
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
->>>>>>>> 5138e2540d0a80a68151d022d5b0e2d6d29c1863:Final Project/Assets/Textures/grass.jpg.meta
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -45,12 +31,6 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-<<<<<<<< HEAD:Final Project/Assets/2D Progress Bar Toolkit/Sprites/bar_01_animal/bar_01_animal.jpg.meta
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
-    wrapMode: -1
-========
     serializedVersion: 2
     filterMode: 1
     aniso: 1
@@ -58,7 +38,6 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
->>>>>>>> 5138e2540d0a80a68151d022d5b0e2d6d29c1863:Final Project/Assets/Textures/grass.jpg.meta
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -67,49 +46,51 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 0
   textureShape: 1
-<<<<<<<< HEAD:Final Project/Assets/2D Progress Bar Toolkit/Sprites/bar_01_animal/bar_01_animal.jpg.meta
-========
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
->>>>>>>> 5138e2540d0a80a68151d022d5b0e2d6d29c1863:Final Project/Assets/Textures/grass.jpg.meta
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
-<<<<<<<< HEAD:Final Project/Assets/2D Progress Bar Toolkit/Sprites/bar_01_animal/bar_01_animal.jpg.meta
-  - buildTarget: DefaultTexturePlatform
-========
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
->>>>>>>> 5138e2540d0a80a68151d022d5b0e2d6d29c1863:Final Project/Assets/Textures/grass.jpg.meta
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-<<<<<<<< HEAD:Final Project/Assets/2D Progress Bar Toolkit/Sprites/bar_01_animal/bar_01_animal.jpg.meta
-========
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>>> 5138e2540d0a80a68151d022d5b0e2d6d29c1863:Final Project/Assets/Textures/grass.jpg.meta
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
-<<<<<<<< HEAD:Final Project/Assets/2D Progress Bar Toolkit/Sprites/bar_01_animal/bar_01_animal.jpg.meta
-========
     physicsShape: []
     bones: []
     spriteID: 
@@ -119,8 +100,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
->>>>>>>> 5138e2540d0a80a68151d022d5b0e2d6d29c1863:Final Project/Assets/Textures/grass.jpg.meta
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
