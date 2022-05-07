@@ -1,9 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 
 public class WalkAround : MonoBehaviour
 {
+    public NavMeshAgent agent;
     private bool idling = false;
 
     void Start()
