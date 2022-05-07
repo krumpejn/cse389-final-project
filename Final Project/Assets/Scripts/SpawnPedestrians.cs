@@ -17,7 +17,11 @@ public class SpawnPedestrians : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        block1 = 
+        block1 = GameObject.Find("Block1").GetComponent<Renderer>().bounds;
+        block2 = GameObject.Find("Block2").GetComponent<Renderer>().bounds;
+        block3 = GameObject.Find("Block3").GetComponent<Renderer>().bounds;
+        block4 = GameObject.Find("Block4").GetComponent<Renderer>().bounds;
+
         while (pedestrians < maxPedestrians)
         {
             Vector3 pos = RandomPosition();
@@ -31,14 +35,22 @@ public class SpawnPedestrians : MonoBehaviour
 
     public Vector3 RandomPosition()
     {
-        float x, y, z;
+        Vector3 pos = Vector3.zero;
+        float x, z;
         bool legal = false;
         while (!legal)
         {
             x = Random.Range(-24.0f, 24.0f);
-            y = 0;
             z = Random.Range(-13.0f, 13.0f);
-            
+            pos = new Vector3(x, 0, z);
+            if (!block1.Contains(pos) &&
+                !block2.Contains(pos) &&
+                !block3.Contains(pos) &&
+                !block4.Contains(pos))
+            {
+                legal = true;
+            }
         }
+        return pos;
     }
 }
