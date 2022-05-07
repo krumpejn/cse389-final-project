@@ -5,40 +5,34 @@ using UnityEngine.AI;
 
 public class SpawnPedestrians : MonoBehaviour
 {
-    public GameObject pedestrian;
+    public GameObject male;
+    public GameObject female;
     private int pedestrians = 0;
     private int maxPedestrians = 100;
-    private Bounds floorBounds;
 
     // Start is called before the first frame update
     void Start()
     {
-
-        floorBounds = GameObject.Find("Floor").GetComponent<Renderer>().bounds;
         while (pedestrians < maxPedestrians)
         {
-            Vector3 point;
-            RandomPosition(out point);
-            Instantiate(pedestrian, point, Quaternion.identity);
+            Vector3 pos = RandomPosition();
+            if (Random.Range(0, 2) == 0)
+                Instantiate(male, pos, Quaternion.identity);
+            else
+                Instantiate(female, pos, Quaternion.identity);
             pedestrians++;
         }
     }
 
-    public bool RandomPosition(out Vector3 result)
+    public Vector3 RandomPosition()
     {
-        float rx = Random.Range(floorBounds.min.x, floorBounds.max.x);
-        float rz = Random.Range(floorBounds.min.z, floorBounds.max.z);
-        Vector3 randomPoint = new Vector3(rx, 0, rz);
-        NavMeshHit hit;
-
-        result = Vector3.zero;
-        while (!NavMesh.SamplePosition(randomPoint, out hit, Mathf.Infinity, NavMesh.AllAreas))
+        float x, y, z;
+        bool legal = false;
+        while (!legal)
         {
-            rx = Random.Range(floorBounds.min.x, floorBounds.max.x);
-            rz = Random.Range(floorBounds.min.z, floorBounds.max.z);
-            randomPoint = new Vector3(rx, 0, rz);
+            x = Random.Range(-24.0f, 24.0f);
+            y = 0;
+            z = Random.Range(-13.0f, 13.0f);
         }
-        result = hit.position;
-        return true;
     }
 }
